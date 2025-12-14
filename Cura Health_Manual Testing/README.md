@@ -7,9 +7,9 @@ The project is designed to demonstrate enterprise-level QA practices followed in
 CURA Healthcare Service – Appointment booking healthcare application.
 
 ## Tools Used
-- Jira – Defect tracking and test management
-- Zephyr – Test case management and execution
-- GitHub – Test artifact version control
+- Jira – Defect tracking, issue management, and test management
+- Zephyr – Test case management, test cycle creation, and execution tracking
+- GitHub – Version control and repository for test artifacts and documentation
 
 ## Test Artifacts Included
 - Test Plan defining scope, test strategy, entry and exit criteria
