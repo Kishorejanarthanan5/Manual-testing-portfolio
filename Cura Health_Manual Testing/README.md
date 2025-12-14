@@ -12,11 +12,12 @@ CURA Healthcare Service – Appointment booking healthcare application.
 - GitHub – Test artifact version control
 
 ## Test Artifacts Included
-- Test Plan
-- Test Cases
-- Defect Reports
-- Requirement Traceability Matrix (RTM)
-- Jira & Zephyr execution evidence
+- Test Plan defining scope, test strategy, entry and exit criteria
+- Test Scenarios and detailed Test Cases
+- Test Execution results using Zephyr
+- Defect Reports logged and tracked in Jira
+- Requirement Traceability Matrix (RTM) for coverage analysis
+- Jira and Zephyr execution evidence (screenshots)
 
 ## Test Scope
 - Login functionality
@@ -25,12 +26,13 @@ CURA Healthcare Service – Appointment booking healthcare application.
 - Logout functionality
 
 ## QA Activities Performed
-- Requirement analysis
-- Test scenario creation
-- Test case design
-- Test execution using Zephyr
-- Defect logging and tracking in Jira
-- RTM preparation for coverage analysis
+- Requirement analysis based on application functionality
+- Preparation of Test Plan outlining scope, approach, and test types
+- Test scenario creation covering positive, negative, and edge cases
+- Detailed test case design using structured templates
+- Manual test execution using Zephyr (integrated with Jira)
+- Defect logging, tracking, and status updates in Jira
+- Requirement Traceability Matrix (RTM) preparation to ensure test coverage
 
 ## Evidence
 Screenshots from Jira and Zephyr are included to demonstrate real-time test execution and defect management.
