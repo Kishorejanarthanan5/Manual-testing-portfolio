@@ -1,0 +1,125 @@
+{
+  "info": {
+    "name": "FakeStore API",
+    "description": "Manual test collection for https://fakestoreapi.com covering GET/POST/PUT/DELETE on the Products resource, including negative scenarios.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET All Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://fakestoreapi.com/products",
+          "protocol": "https",
+          "host": ["fakestoreapi", "com"],
+          "path": ["products"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Product by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://fakestoreapi.com/products/1",
+          "protocol": "https",
+          "host": ["fakestoreapi", "com"],
+          "path": ["products", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET Invalid Product ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://fakestoreapi.com/products/99999",
+          "protocol": "https",
+          "host": ["fakestoreapi", "com"],
+          "path": ["products", "99999"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Product",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"QA Notebook\",\n  \"price\": 100,\n  \"description\": \"Testing Item\",\n  \"image\": \"abc.jpg\",\n  \"category\": \"electronics\"\n}"
+        },
+        "url": {
+          "raw": "https://fakestoreapi.com/products",
+          "protocol": "https",
+          "host": ["fakestoreapi", "com"],
+          "path": ["products"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Product - Missing Body",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{}"
+        },
+        "url": {
+          "raw": "https://fakestoreapi.com/products",
+          "protocol": "https",
+          "host": ["fakestoreapi", "com"],
+          "path": ["products"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT Product",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"QA Notebook - Updated\",\n  \"price\": 120,\n  \"description\": \"Testing Item Updated\",\n  \"image\": \"abc.jpg\",\n  \"category\": \"electronics\"\n}"
+        },
+        "url": {
+          "raw": "https://fakestoreapi.com/products/1",
+          "protocol": "https",
+          "host": ["fakestoreapi", "com"],
+          "path": ["products", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE Product",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://fakestoreapi.com/products/1",
+          "protocol": "https",
+          "host": ["fakestoreapi", "com"],
+          "path": ["products", "1"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
