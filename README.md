@@ -1,35 +1,113 @@
 # Manual Testing Portfolio
 
-This repository contains my **manual testing portfolio**, showcasing real-world testing practices followed in enterprise QA environments.
+A collection of manual testing projects demonstrating industry-standard QA practices for both **Web UI Testing** and **REST API Testing**.
 
-The portfolio includes **UI manual testing** and **API manual testing** projects, demonstrating my ability to analyze requirements, design test artifacts, execute tests, log defects, and ensure coverage using structured QA processes.
+This portfolio showcases my experience in requirement analysis, test planning, test case design, test execution, defect reporting, and traceability using commonly used QA tools and methodologies.
 
 ---
 
-## Projects Included
+## Skills Demonstrated
 
-### 1. CURA Healthcare – Manual UI Testing
-This project focuses on manual UI testing of the CURA Healthcare Service application.
+- Manual Functional Testing
+- UI Testing
+- API Testing
+- Test Planning
+- Test Case Design
+- Test Execution
+- Defect Reporting
+- Requirement Traceability
+- Regression Testing
+- Negative Testing
+- Exploratory Testing
 
-**Key highlights:**
-- Test Plan defining scope, test approach, and entry/exit criteria
-- Functional, negative, exploratory, and accessibility test cases
-- Test execution using Zephyr
-- Defect logging and tracking in Jira
+---
+
+# Projects
+
+## 1. CURA Healthcare – Manual UI Testing
+
+Manual testing of the CURA Healthcare Service web application.
+
+### Deliverables
+
+- Test Plan
+- Test Scenarios & Test Cases
 - Requirement Traceability Matrix (RTM)
-- Jira and Zephyr execution evidence (screenshots)
+- Test Execution Report
+- Jira Defect Report
+- Zephyr Test Execution
+- Execution Evidence (Screenshots)
+
+### Testing Performed
+
+- Functional Testing
+- Negative Testing
+- Exploratory Testing
+- Accessibility Validation
+- Smoke Testing
+- Regression Testing
+
+**Folder:** `CURA-Healthcare-Manual-Testing`
 
 ---
 
-### 2. API Manual Testing (E-commerce Style APIs)
-This project focuses on manual testing of REST APIs using an e-commerce business flow (products, users, orders).
+## 2. API Manual Testing
 
-**Key highlights:**
+Manual testing of REST APIs using a public e-commerce application.
+
+### Deliverables
+
 - API Test Plan
-- Manual API test cases (request, response, status code validation)
-- Negative and boundary scenarios
-- API defect reporting
-- Sample API responses for reference
+- API Test Cases
+- Postman Collection
+- Request & Response Samples
+- Defect Report
+- Test Execution Report
+- Execution Evidence
 
-📁 Folder:
+### API Validations
 
+- GET
+- POST
+- PUT
+- PATCH
+- DELETE
+- Status Code Validation
+- Response Body Validation
+- Header Validation
+- Negative Testing
+- CRUD Operations
+
+**Folder:** `API-Manual-Testing`
+
+---
+
+# Tools Used
+
+| Category | Tools |
+|----------|-------|
+| Test Management | Zephyr |
+| Defect Tracking | Jira |
+| API Testing | Postman |
+| Documentation | Microsoft Excel, Word |
+| Version Control | Git & GitHub |
+
+---
+
+# Repository Structure
+
+```
+Manual-Testing-Portfolio
+│
+├── CURA-Healthcare-Manual-Testing
+│
+└── API-Manual-Testing
+```
+
+---
+
+# About
+
+This repository is part of my QA portfolio and reflects the manual testing practices followed in enterprise software testing projects.
+
+It is intended to demonstrate structured QA documentation, testing techniques, and defect management before progressing into automation testing using Selenium and REST Assured.
