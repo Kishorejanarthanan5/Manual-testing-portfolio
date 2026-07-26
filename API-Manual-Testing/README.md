@@ -1,68 +1,83 @@
-# API Manual Testing Project
+# API Manual Testing – Fake Store API
 
-This repository contains manual testing artifacts for validating REST APIs.
-The project focuses on verifying API functionality, request and response behavior, and error handling through manual API testing.
+Manual API testing project on the public [Fake Store API](https://fakestoreapi.com), built to demonstrate manual QA test design, execution, and defect reporting applied to REST APIs — prior to moving into API automation with REST Assured.
 
----
+## Why this project
 
-## APIs Under Test
+Coming from 6+ years of manual PBM/claims testing, this project translates that same test-design discipline (positive/negative scenarios, boundary cases, structured defect logging) to a REST API context, as a foundation before automating the same coverage.
 
-Publicly available demo APIs are used for testing purposes, representing common e-commerce and user management scenarios.
+## Project Metrics
 
-Example APIs include:
-- Product APIs
-- User APIs
-- Cart or Order APIs
+| Metric | Value |
+|---|---|
+| Endpoints Tested | 5 |
+| Test Cases Designed | 15 |
+| Executed | 15 |
+| Passed | 14 |
+| Failed | 1 |
+| Blocked | 0 |
+| Sample Defects Logged | 2 |
 
----
+## Repository Structure
+
+```
+API-Manual-Testing
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── Test Plan/
+│   └── API_Test_Plan.docx
+├── Test Cases/
+│   └── API_Test_Cases.xlsx
+├── Test Execution/
+│   └── Test_Execution_Report.xlsx
+├── Defect Report/
+│   └── Defect_Log.xlsx
+├── Postman Collection/
+│   └── FakeStore_API.postman_collection.json
+├── Evidence/
+│   ├── GET_All_Products_200.png
+│   ├── GET_Invalid_Product_200_EmptyBody.png
+│   ├── POST_Create_Product_200.png
+│   ├── PUT_Update_Product_200.png
+│   └── DELETE_Product_200.png
+└── Request Response Samples/
+    ├── GET_Product_Request.txt
+    ├── GET_Product_Response.json
+    ├── POST_Product_Request.json
+    └── POST_Product_Response.json
+```
+
+## Scope
+
+**In scope:** GET Products, GET Single Product, POST Product, PUT Product, DELETE Product
+**Out of scope:** Performance, Security, Automation (covered in a separate automation repo)
+
+## Endpoints Covered
+
+| Method | Endpoint |
+|--------|----------|
+| GET | /products |
+| GET | /products/{id} |
+| POST | /products |
+| PUT | /products/{id} |
+| DELETE | /products/{id} |
+
+## API Validations
+
+- HTTP Status Codes
+- Response Body
+- JSON Schema (Manual)
+- Header Validation
+- Data Type Validation
+- Negative Testing
+- CRUD Operations
 
 ## Tools Used
 
-- **Postman** – Manual API testing and request execution
-- **Microsoft Excel** – API test cases and defect tracking
-- **GitHub** – Version control and storage of test artifacts
+Postman · Excel · GitHub
 
----
+## Next Step
 
-## Test Artifacts Included
-
-- API Test Plan
-- API Test Cases
-- API Defect Report
-- Sample API request and response payloads
-
----
-
-## Test Scope
-
-### In Scope
-- GET, POST, PUT, PATCH, and DELETE APIs
-- Status code validation
-- Response body validation
-- Header validation
-- Negative test scenarios
-
-### Out of Scope
-- Performance and load testing
-- Security testing
-- API automation testing
-
----
-
-## QA Activities Performed
-
-- Understanding API requirements and endpoints
-- Designing manual API test cases
-- Executing API requests and validating responses
-- Verifying status codes and error messages
-- Identifying and documenting defects
-
----
-
-## Notes
-
-- This project focuses on manual API testing practices.
-- Public demo APIs are used to validate common REST API behaviors.
-- Focus is on correctness, validation, and backend testing approach.
-- Test artifacts are structured to maintain clarity and traceability.
-  
+The automation counterpart to this project — the API coverage automated with REST Assured — is built here: [hybrid-automation-framework](#)
